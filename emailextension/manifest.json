@@ -1,0 +1,35 @@
+{
+  "name": "Email assistant",
+  "description": "AI - Powered reply generator for gmail",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_title": "Email Writer Assistant ajay",
+    "default_popup": "main.html"
+  },
+   "host_permissions": [
+    "http://localhost:8080/*","*://mail.google.com/*"
+  ]
+  ,"permissions": ["storage", "activeTab"],
+  "web_accessible_resources": [
+    {
+      "resources": [ "icons/*" ],
+      "matches": [
+        "*://mail.google.com/*"
+      ]
+    }
+  ]
+  ,
+  "content_scripts": [
+    {
+      "js": [
+        "content.js"
+      ],
+      "matches": [
+        "*://mail.google.com/*"
+      ],
+      "css":["content.css"],
+      "run_at":"document_end"
+    }
+  ]
+}
