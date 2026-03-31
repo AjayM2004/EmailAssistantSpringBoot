@@ -1,5 +1,12 @@
 # ✉️ Email Assistant (AI-Powered Gmail Reply Generator)
+🎥 Demo Video
 
+Check out how the Email Assistant works in real-time:
+
+👉 Watch here: [Add your YouTube link here]
+
+(Example: https://www.youtube.com/watch?v=your_video_id
+)
 ## 🚀 Overview
 
 Email Assistant is a full-stack AI-powered application that helps users generate smart email replies directly inside Gmail using a Chrome Extension.
