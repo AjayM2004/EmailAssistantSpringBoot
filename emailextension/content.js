@@ -16,8 +16,15 @@ function findComposeToolbar() {
 }
 function createAIButton() {
    const button = document.createElement('div');
+   const box = document.querySelector('.aDh');
+   const space = document.querySelector('.U6Cexb');
+  //  box.className = 'aDh';
+  space.style.margin = '0px';
+   box.style.display = 'flex';
+   box.style.flexDirection = 'row';
    button.className = 'T-I J-J5-Ji aoO v7 T-I-atl L3';
-   button.style.marginRight = '8px';
+   button.style.marginRight = '-18px';
+   button.style.margin = '10px 5px 5px 5px';
    button.innerHTML = 'AI Reply';
    button.setAttribute('role', 'button');
    button.setAttribute('data-tooltip', 'Generate AI Reply');
